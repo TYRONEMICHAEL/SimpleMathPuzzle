@@ -4,7 +4,7 @@
   "description": "Building A Javascript Game Without Ever Opening The Browser",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "gulp test"
   },
   "author": "Tyrone Michael Avnit",
   "license": "BSD-2-Clause",
