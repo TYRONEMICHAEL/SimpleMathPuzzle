@@ -1,5 +1,7 @@
 // Browserify and application entry point.
-var SimpleMathPuzzle = require('./simplemathpuzzle'),
-    simpleMathPuzzle = new SimpleMathPuzzle();
+var $ = require('jquery/dist/jquery'),
+    SimpleMathPuzzle = require('./simplemathpuzzle'),
+    puzzle = require('./puzzle'),
+    simpleMathPuzzle = new SimpleMathPuzzle(puzzle);
 
-simpleMathPuzzle.init();
+$('#puzzle').empty().append(simpleMathPuzzle.$el);

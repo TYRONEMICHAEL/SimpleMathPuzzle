@@ -1,0 +1,30 @@
+#puzzle{
+    margin-left: 40px;
+}
+
+#start{
+    position: absolute;
+    top: 237px;
+    left: 10px;
+}
+
+#end{
+    position: absolute;
+    top: 85px;
+    left: 270px;
+}
+
+td{
+    padding: 5px 10px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.path--selected{
+    background-color: #ccc;
+}
+
+.path--selected.path--completed{
+    background-color: orange;
+    color: #fff;
+}
