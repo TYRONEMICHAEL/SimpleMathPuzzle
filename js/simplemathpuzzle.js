@@ -77,8 +77,7 @@ SimpleMathPuzzle.prototype = (function() {
         highlightGridItem: function(ev) {
             var $el = $(ev.currentTarget),
     			coords = this.getCoordsOfGridItem($el),
-    			clickedStart = this.clickedStart(coords),
-    			hasBegun = clickedStart && this.currentPath.length !== 0;
+    			clickedStart = this.clickedStart(coords);
 
             if(this.hasCompleted()) return;
 
